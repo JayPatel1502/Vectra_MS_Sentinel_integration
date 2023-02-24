@@ -19,7 +19,7 @@
         "BaseURL": {
             "type": "string",
             "metadata": {
-                "description": "Please provide the valid BaseURL starting with \"https://\" schema. (E.g. https://xxx.portal.vectra.ai)"
+                "description": "BaseURL starting with \"https://\" followed by hostname (Ex: https://host.portal.vectra.ai)."
             }
         },
         "ClientId": {
@@ -33,8 +33,9 @@
         "StartTime": {
             "type": "string",
             "metadata": {
-                "description": "Please provide the valid StartTime in UTC Format: MM/DD/YYYY HH:MM:SS(E.g. 07/19/2022 14:36:12)"
-            }
+                "description": "Optional. Start Time for data collection in UTC (MM/DD/YYYY HH:MM:SS) Format (Ex: 07/19/2022 14:36:12). Default will be Current time."
+            },
+            "defaultValue": ""
         },
         "Audits_Table_Name": {
             "type": "string",
@@ -64,21 +65,21 @@
             "type": "string",
             "defaultValue": "0 2/10 * * * *",
             "metadata": {
-                "description": "Please enter a valid Quartz cron-expression. The default value is every 10 minutes starting from Minute :02 of every hour."
+                "description": "Enter a valid Quartz cron-expression. The default value is every 10 minutes starting from Minute :02 of every hour."
             }
         },
         "AuditsSchedule": {
             "type": "string",
             "defaultValue": "0 5/10 * * * *",
             "metadata": {
-                "description": "Please enter a valid Quartz cron-expression. The default value is every 10 minutes starting from Minute :05 of every hour."
+                "description": "Enter a valid Quartz cron-expression. The default value is every 10 minutes starting from Minute :05 of every hour."
             }
         },
         "EntityScoringSchedule": {
             "type": "string",
             "defaultValue": "0 8/10 * * * *",
             "metadata": {
-                "description": "Please enter a valid Quartz cron-expression. The default value is every 10 minutes starting from Minute :08 of every hour."
+                "description": "Enter a valid Quartz cron-expression. The default value is every 10 minutes starting from Minute :08 of every hour."
             }
         }
     },
@@ -220,7 +221,7 @@
                         "AccountDetectionSchedule": "[parameters('AccountDetectionSchedule')]",
                         "AuditsSchedule": "[parameters('AuditsSchedule')]",
                         "EntityScoringSchedule": "[parameters('EntityScoringSchedule')]",
-                        "WEBSITE_RUN_FROM_PACKAGE": "https://github.com/JayPatel1502/Vectra_MS_Sentinel_integration/blob/main/VectraDataConnector-D-1.0.0-1.zip?raw=true"
+                        "WEBSITE_RUN_FROM_PACKAGE": "https://github.com/JayPatel1502/Vectra_MS_Sentinel_integration/blob/main/VectraDataConnector-D-1.0.0-2.zip?raw=true"
                     }
                 }
             ]

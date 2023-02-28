@@ -37,15 +37,15 @@
             },
             "defaultValue": ""
         },
-        "Audits_Table_Name": {
+        "AuditsTableName": {
             "type": "string",
             "defaultValue": "Audits_Data"
         },
-        "Account_Detection_Table_Name": {
+        "AccountDetectionTableName": {
             "type": "string",
             "defaultValue": "Account_Detection_Data"
         },
-        "Entity_Scoring_Table_Name": {
+        "EntityScoringTableName": {
             "type": "string",
             "defaultValue": "Entity_Scoring_Data"
         },
@@ -53,7 +53,7 @@
             "type": "string",
             "defaultValue": "INFO",
             "metadata": {
-                "description": "Please add log level or log severity value. By default it is set to INFO."
+                "description": "Please select log level or log severity value. By default it is set to INFO."
             },
             "allowedValues": [
                 "DEBUG",
@@ -214,14 +214,14 @@
                         "ClientSecretKey": "[parameters('ClientSecretKey')]",
                         "BaseURL": "[parameters('BaseURL')]",
                         "StartTime": "[parameters('StartTime')]",
-                        "Audits_Table_Name": "[parameters('Audits_Table_Name')]",
-                        "Account_Detection_Table_Name": "[parameters('Account_Detection_Table_Name')]",
-                        "Entity_Scoring_Table_Name": "[parameters('Entity_Scoring_Table_Name')]",
+                        "Audits_Table_Name": "[parameters('AuditsTableName')]",
+                        "Account_Detection_Table_Name": "[parameters('AccountDetectionTableName')]",
+                        "Entity_Scoring_Table_Name": "[parameters('EntityScoringTableName')]",
                         "LogLevel": "[parameters('LogLevel')]",
                         "AccountDetectionSchedule": "[parameters('AccountDetectionSchedule')]",
                         "AuditsSchedule": "[parameters('AuditsSchedule')]",
                         "EntityScoringSchedule": "[parameters('EntityScoringSchedule')]",
-                        "WEBSITE_RUN_FROM_PACKAGE": "https://github.com/JayPatel1502/Vectra_MS_Sentinel_integration/blob/main/VectraDataConnector-D-1.0.0-2.zip?raw=true"
+                        "WEBSITE_RUN_FROM_PACKAGE": "https://github.com/JayPatel1502/Vectra_MS_Sentinel_integration/blob/main/VectraDataConnector-D-1.0.0-3.zip?raw=true"
                     }
                 }
             ]

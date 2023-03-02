@@ -16,17 +16,17 @@
             "type": "securestring",
             "minLength": 1
         },
-        "BaseURL": {
+        "VectraBaseURL": {
             "type": "string",
             "metadata": {
                 "description": "BaseURL starting with \"https://\" followed by hostname (Ex: https://host.portal.vectra.ai)."
             }
         },
-        "ClientId": {
+        "VectraClientId": {
             "type": "string",
             "minLength": 1
         },
-        "ClientSecretKey": {
+        "VectraClientSecretKey": {
             "type": "securestring",
             "minLength": 1
         },
@@ -202,7 +202,7 @@
                         "[concat('Microsoft.Web/sites/', variables('FunctionName'))]"
                     ],
                     "properties": {
-                        "FUNCTIONS_EXTENSION_VERSION": "~3",
+                        "FUNCTIONS_EXTENSION_VERSION": "~4",
                         "FUNCTIONS_WORKER_RUNTIME": "python",
                         "APPINSIGHTS_INSTRUMENTATIONKEY": "[reference(resourceId('Microsoft.insights/components', variables('FunctionName')), '2015-05-01').InstrumentationKey]",
                         "APPLICATIONINSIGHTS_CONNECTION_STRING": "[reference(resourceId('microsoft.insights/components', variables('FunctionName')), '2015-05-01').ConnectionString]",
@@ -210,9 +210,9 @@
                         "logAnalyticsUri": "[variables('LogAnaltyicsUri')]",
                         "WorkspaceID": "[parameters('WorkspaceID')]",
                         "WorkspaceKey": "[parameters('WorkspaceKey')]",
-                        "ClientId": "[parameters('ClientId')]",
-                        "ClientSecretKey": "[parameters('ClientSecretKey')]",
-                        "BaseURL": "[parameters('BaseURL')]",
+                        "ClientId": "[parameters('VectraClientId')]",
+                        "ClientSecretKey": "[parameters('VectraClientSecretKey')]",
+                        "BaseURL": "[parameters('VectraBaseURL')]",
                         "StartTime": "[parameters('StartTime')]",
                         "Audits_Table_Name": "[parameters('AuditsTableName')]",
                         "Account_Detection_Table_Name": "[parameters('AccountDetectionTableName')]",

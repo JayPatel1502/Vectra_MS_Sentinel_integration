@@ -39,15 +39,24 @@
         },
         "AuditsTableName": {
             "type": "string",
-            "defaultValue": "Audits_Data"
+            "defaultValue": "Audits_Data",
+            "allowedValues": [
+                "Audits_Data"
+            ]
         },
         "AccountDetectionTableName": {
             "type": "string",
-            "defaultValue": "Account_Detection_Data"
+            "defaultValue": "Account_Detection_Data",
+            "allowedValues": [
+                "Account_Detection_Data"
+            ]
         },
         "EntityScoringTableName": {
             "type": "string",
-            "defaultValue": "Entity_Scoring_Data"
+            "defaultValue": "Entity_Scoring_Data",
+            "allowedValues": [
+                "Entity_Scoring_Data"
+            ]
         },
         "LogLevel": {
             "type": "string",
@@ -221,7 +230,7 @@
                         "AccountDetectionSchedule": "[parameters('AccountDetectionSchedule')]",
                         "AuditsSchedule": "[parameters('AuditsSchedule')]",
                         "EntityScoringSchedule": "[parameters('EntityScoringSchedule')]",
-                        "WEBSITE_RUN_FROM_PACKAGE": "https://github.com/JayPatel1502/Vectra_MS_Sentinel_integration/blob/main/VectraDataConnector-D-1.0.0-5.zip?raw=true"
+                        "WEBSITE_RUN_FROM_PACKAGE": "https://github.com/JayPatel1502/Vectra_MS_Sentinel_integration/blob/main/VectraDataConnector-D-1.0.0-7.zip?raw=true"
                     }
                 }
             ]

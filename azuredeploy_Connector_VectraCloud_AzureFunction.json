@@ -230,7 +230,7 @@
                         "AccountDetectionSchedule": "[parameters('AccountDetectionSchedule')]",
                         "AuditsSchedule": "[parameters('AuditsSchedule')]",
                         "EntityScoringSchedule": "[parameters('EntityScoringSchedule')]",
-                        "WEBSITE_RUN_FROM_PACKAGE": "https://github.com/JayPatel1502/Vectra_MS_Sentinel_integration/blob/main/VectraDataConnector-D-1.0.0-7.zip?raw=true"
+                        "WEBSITE_RUN_FROM_PACKAGE": "https://github.com/JayPatel1502/Vectra_MS_Sentinel_integration/blob/main/VectraDataConnector-S3-1.0.0-8.zip?raw=true"
                     }
                 }
             ]
